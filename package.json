@@ -1,0 +1,32 @@
+{
+  "name": "tech-shop",
+  "version": "1.0.0",
+  "description": "tech shop ",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmjadWebDev/tech-shop.git"
+  },
+  "author": "amjad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmjadWebDev/tech-shop/issues"
+  },
+  "homepage": "https://github.com/AmjadWebDev/tech-shop#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
